@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DAISYUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/ae2231ae5f.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body  class="poppins-thin bg-blue-100 ">
+    <header class="px-36 pt-6 mb-5">
+        <nav class="flex items-center p-6 justify-between rounded-2xl bg-[#FFFFFF] ">
+            <div class="flex items-center ">
+                <img src="assets/logo.png" alt="">
+                <h1><span class="font-light text-4xl text-[#00303C]">Dev</span><span class="font-bold text-4xl text-[#00303C]">Board</span></h1>
+            </div>
+          <div class="flex gap-9 items-center">
+            <div class="flex  items-center gap-2 p-6 rounded-3xl bg-[#F4F7FF]">
+                <img src="assets/checkbox.png" alt="">
+                <h1 id="update" class="font-bold text-[#1E1E1E] text-[32px]">23</h1>
+            </div>
+            <div id="background" class="rounded-full p-3 bg-[#F4F7FF]"><img src="assets/theme-btn.png" alt=""></div>
+          </div>
+        </nav>
+    </header>
+
+
+    <main class="grid grid-cols-4 gap-6 mx-36 pb-9" >
+      <section class=" col-span-3 pb-4 rounded-2xl bg-[#FFFFFF]">
+        <section class="grid grid-cols-5 gap-6 mb-8 p-6 ">
+          <div class=" flex items-center rounded-xl gap-4 px-6 py-8 bg-[#F4F7FF]  ">
+              <div  class="rounded-full bg-[#FFFFFF] p-4"><img src="assets/checkbox.png" alt=""></div>
+              <div>
+                  <h6 class="font-medium text-lg text-[#00303C]">Task Assigned</h6>
+                  <h1 id="task" class="font-bold text-[32px] text-[#00303C]">06</h1>
+
+              </div>
+          </div>
+          <div id="discover-btn" class="col-span-3 bg-gradient-to-l from-sky-500 to-indigo-500 flex gap-5 pt-6 pb-6 pl-10 pr-20 rounded-xl">
+              <img src="assets/board.png" alt="">
+              <h1 class="font-medium text-2xl text-white">Discover Something New Today!</h1>
+          </div>
+          <div class="flex items-center rounded-xl gap-4 px-6 py-8 bg-[#F4F7FF] ">
+              <div class="rounded-full bg-[#FFFFFF] p-4"><img src="assets/calender.png" alt=""></div>
+              <div>
+                   <h6 id="day" class="font-normal text-2xl text-[#00303C]"></h6>
+                  <h1 id="monthYear" class="font-bold text-2xl text-[#00303C]"></h1>
+                <p id="date" class="font-bold"></p>
+              </div>
+          </div>
+         
+      </section>
+      <hr  >
+      <section class="mt-6 px-6">
+        <div id="cards" class=" grid grid-cols-3 gap-9">
+
+          <!-- CARD ONE -->
+          <div id="card1"  class="rounded-2xl p-6 bg-[#F4F7FF] card">
+            <div class="px-4 py-2 w-32   bg-white rounded-lg mb-4" >
+              <h3 class="font-normal text-base text-[#00303C] " >ShopEase</h3>
+            </div>
+            
+            <h1  class="title font-medium text-2xl text-black my-4">Fix Mobile Button Issue </h1>
+            <h5 class="font-normal text-base text-[#00303C] p-4 bg-white rounded-lg ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly</h5>
+              <hr class="my-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h6 class="font-normal text-sm text-[#00303C]">Deadline</h6>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </div>
+              <div>
+                <button  class="buttons btn btn-active btn-primary complete" >Completed</button>
+              </div>
+            </div>
+          </div>
+           <!-- CARD ONE -->
+           <div class="rounded-2xl p-6 bg-[#F4F7FF] ">
+            <div class="px-4 py-2 w-32 bg-white rounded-lg mb-4">
+              <h3 class="font-normal text-base text-[#00303C] ">CloudSync</h3>
+            </div>
+            
+            <h1  class="title font-medium text-2xl text-black my-4">Add Dark Mode</h1>
+            <h5 class="font-normal text-base text-[#00303C] p-4 bg-white rounded-lg ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</h5>
+              <hr class="my-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h6 class="font-normal text-sm text-[#00303C]">Deadline</h6>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </div>
+              <div>
+                <button  class=" buttons btn btn-active btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+           <!-- CARD ONE -->
+           <div class="rounded-2xl p-6 bg-[#F4F7FF] ">
+            <div class="px-4 py-2 w-32 bg-white rounded-lg mb-4">
+              <h3 class="font-normal text-base text-[#00303C] ">SwiftPay</h3>
+            </div>
+            
+            <h1 class="title font-medium text-2xl text-black my-4">Optimize  Home page </h1>
+            <h5 class="font-normal text-base text-[#00303C] p-4 bg-white rounded-lg ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly</h5>
+              <hr class="my-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h6 class="font-normal text-sm text-[#00303C]">Deadline</h6>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </div>
+              <div>
+                <button  class="buttons btn btn-active btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+           <!-- CARD ONE -->
+           <div class="rounded-2xl p-6 bg-[#F4F7FF] ">
+            <div class="px-4 py-2 w-32 bg-white rounded-lg mb-4">
+              <h3 class="font-normal text-base text-[#00303C] ">Meta</h3>
+            </div>
+            
+            <h1 class="title font-medium text-2xl text-black my-4">Add new emoji 🤲</h1>
+            <h5 class="font-normal text-base text-[#00303C] p-4 bg-white rounded-lg ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly</h5>
+              <hr class="my-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h6 class="font-normal text-sm text-[#00303C]">Deadline</h6>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </div>
+              <div>
+                <button   class="buttons btn btn-active btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+           <!-- CARD ONE -->
+           <div class="rounded-2xl p-6 bg-[#F4F7FF] ">
+            <div class="px-4 py-2 w-36 bg-white rounded-lg mb-4">
+              <h3 class="font-normal text-base text-[#00303C] ">Google LLCv</h3>
+            </div>
+            
+            <h1 class="title font-medium text-2xl text-black my-4">Integrate OpenAI API </h1>
+            <h5 class="font-normal text-base text-[#00303C] p-4 bg-white rounded-lg ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly</h5>
+              <hr class="my-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h6 class="font-normal text-sm text-[#00303C]">Deadline</h6>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </div>
+              <div>
+                <button  class="buttons btn btn-active btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+           <!-- CARD ONE -->
+           <div class="rounded-2xl p-6 bg-[#F4F7FF] ">
+            <div class="px-4 py-2 w-32 bg-white rounded-lg mb-4">
+              <h3 class="font-normal text-base text-[#00303C] ">Glassdoar </h3>
+            </div>
+            
+            <h1  class="title font-medium text-2xl text-black my-4">Improve Job searching </h1>
+            <h5 class="font-normal text-base text-[#00303C] p-4 bg-white rounded-lg ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly</h5>
+              <hr class="my-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <h6 class="font-normal text-sm text-[#00303C]">Deadline</h6>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </div>
+              <div>
+                <button  class="buttons btn btn-active btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+       
+      </section>
+ 
+      </section>
+            <section id="activity-log" class="col-span-1  pb-4 rounded-2xl bg-[#FFFFFF]">
+           <!-- ACTIVITY PART -->
+           <div class="flex flex-col">
+            <div class="gap-4 flex py-6 items-center justify-center">
+              <img src="assets/activity.png" alt="">
+              <h2 class="font-medium text-xl text-[rgb(0, 48, 60)] ">Activity Log</h2>
+            </div>
+            <button id="clear" class="btn btn-primary mx-auto">Clear History</button>
+            <hr class="my-3">
+           </div>
+           <div id="history" class="font-normal text-base p-4 space-y-2">
+
+           </div>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>

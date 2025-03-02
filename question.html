@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DAISYUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .blogs{
+            text-shadow:4px 18px 6px rgb(155, 147, 155);
+            -webkit-text-stroke:0.2px black;
+            text-align: center;
+            padding: 16px;
+        }
+      </style>
+    
+    <title>Document</title>
+</head>
+<body class="poppins-thin bg-blue-100 ">
+    <header>
+        <header class="px-36 pt-6 mb-5 pb-11">
+            <nav class="flex items-center p-6 justify-between rounded-2xl bg-[#FFFFFF] shadow-xl ">
+                <div class="flex items-center ">
+                    <img src="assets/logo.png" alt="">
+                    <h1><span class="font-light text-4xl text-[#00303C]">Dev</span><span class="font-bold text-4xl text-[#00303C]">Board</span></h1>
+                </div>
+              
+            <div>
+            <button id="back-btn" class="btn btn-primary ">Back to Desk</button>
+            
+           </div>
+            
+            </nav>
+            <!-- <hr class="my-3"> -->
+        </header>
+        <h1 class="font-bold text-4xl text-fuchsia-700 blogs ">Blogs</h1>
+    </header>
+    <main  class="px-36 pt-6  pb-11">
+        <div class="flex flex-col gap-10">
+            <div class="p-7 rounded-2xl bg-fuchsia-200">
+                <h1 class=" mb-4 font-bold text-2xl text-black">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <hr>
+                <p class=" mt-5 font-normal text-lg text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores nobis accusantium iste ullam maiores molestias at? Sint, similique ducimus nostrum iste iusto aliquam sed delectus excepturi harum sapiente quisquam sequi.</p>
+            </div>
+            <div class="p-7 rounded-2xl bg-fuchsia-200">
+                <h1 class=" mb-4 font-bold text-2xl text-black">Question-2:What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <hr>
+                <p class=" mt-5 font-normal text-lg text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores nobis accusantium iste ullam maiores molestias at? Sint, similique ducimus nostrum iste iusto aliquam sed delectus excepturi harum sapiente quisquam sequi.</p>
+            </div>
+            <div class="p-7 rounded-2xl bg-fuchsia-200">
+                <h1 class=" mb-4 font-bold text-2xl text-black">Question-3: What is event delegation in the DOM?</h1>
+                <hr>
+                <p class=" mt-5 font-normal text-lg text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores nobis accusantium iste ullam maiores molestias at? Sint, similique ducimus nostrum iste iusto aliquam sed delectus excepturi harum sapiente quisquam sequi.</p>
+            </div>
+            <div class="p-7 rounded-2xl bg-fuchsia-200">
+                <h1 class=" mb-4 font-bold text-2xl text-black">Question-4:What is event bubbling in the DOM?</h1>
+                <hr>
+                <p class=" mt-5 font-normal text-lg text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores nobis accusantium iste ullam maiores molestias at? Sint, similique ducimus nostrum iste iusto aliquam sed delectus excepturi harum sapiente quisquam sequi.</p>
+            </div>
+            <div class="p-7 rounded-2xl bg-fuchsia-200">
+                <h1 class=" mb-4 font-bold text-2xl text-black">Question-5:How do you create, add, and remove elements using JavaScript?</h1>
+                <hr>
+                <p class=" mt-5 font-normal text-lg text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores nobis accusantium iste ullam maiores molestias at? Sint, similique ducimus nostrum iste iusto aliquam sed delectus excepturi harum sapiente quisquam sequi.</p>
+            </div>
+        </div>
+    </main>
+    <script src="desk.js"></script>
+</body>
+</html>
