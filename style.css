@@ -11,6 +11,9 @@
     border-color: rgba(55, 82, 253, 0.2);
     margin-bottom:10px;
   }
- .hidden{
-  display: none;
+ .background{
+  background-color: rgb(241, 241, 250);
+  padding: 10px;
+  border-radius: 8px;
+
  }

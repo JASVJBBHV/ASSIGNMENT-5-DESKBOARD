@@ -71,6 +71,7 @@ for(let i=0;i<completeBtns.length;i++){
                 
                 const text='You Have Complete The Task '+ title.innerText +' at '+time;
                 console.log(text)
+                newHistory.classList.add('background')
                 newHistory.innerText=text
                 console.log(newHistory)
                 document.getElementById('history').appendChild(newHistory)
